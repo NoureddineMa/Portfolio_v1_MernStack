@@ -1,0 +1,15 @@
+.podkova {
+    font-family: 'podkova';
+}
+.size {
+    height: max-content;
+}
+.effect:hover{
+    opacity: 2;
+}
+.back {
+   background-color: rgb(34, 42, 62); 
+}
+.texte {
+    color: rgb(122, 134, 221);
+}

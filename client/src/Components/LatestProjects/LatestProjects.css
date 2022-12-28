@@ -1,0 +1,20 @@
+.test-hover:hover {
+    border-bottom: 6px solid #7A86DD;
+    cursor: grab;
+}
+.test-hover {
+    border : 1px solid #FFFF;
+}
+.height {
+    height: min-content;
+    margin: 10px 0;
+}
+.card {
+    margin: 0 auto;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'podkova';
+}

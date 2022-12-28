@@ -1,0 +1,45 @@
+.hero {
+    font-family: 'Podkova', serif;
+}
+.right-11 {
+    right: 0.75rem;
+}
+.right-10 {
+    right: 23.5rem;
+}
+.left-2 {
+    left: -0.5rem;
+}
+.top-3 {
+    top: 12.75rem;
+}
+.last {
+    left: 330px;
+    bottom: 70px;
+}
+.middle {
+    left: 463px;
+    bottom: 444px;
+}
+.first {
+    right: 172px;
+    bottom: 91px;
+}
+.py-8 {
+    padding-bottom: 9rem;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+@media (max-width: 640px) { 
+    .media {
+        visibility: hidden;
+    }
+ }
+
+ @media (max-width: 991px) { .media {
+    visibility: hidden;
+} }
+
