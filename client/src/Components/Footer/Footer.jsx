@@ -4,7 +4,8 @@ function Footer() {
     return (
         <>
             <footer style={{ backgroundColor: '#222A3E' }}>
-                <p className='text-white text-base py-5  font text-center'>Copyright © 2022 Designed & Developed by Maher</p>
+                <p className='text-white text-base pt-5  font text-center'>Copyright © 2022 Designed & Developed by Maher</p>
+                <p className='text-white text-base mb-3 font text-center'>Made By love ❤️ </p>
                 <div className='flex flex-row justify-center  space-x-3 pt-1 pb-4'>
                     <a href=""><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="34" height="34" stroke="white" />

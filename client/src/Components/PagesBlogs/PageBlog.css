@@ -1,0 +1,30 @@
+.min {
+    height: min-content;
+    margin: 10px 0;
+}
+.borderR {
+    border: 2px solid whitesmoke;
+ }
+ .Ss {
+    left: 38.5rem;
+    top: 60rem;
+ }
+ .bottom {
+    bottom: 172px;
+ }
+ .w-96 {
+    width: 39rem;
+}
+
+@media (min-width: 1024px){
+    .ls{
+       margin-right: 16.75rem;
+   }
+}
+.last {
+    left: 330px;
+    bottom: 15px;
+}
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}

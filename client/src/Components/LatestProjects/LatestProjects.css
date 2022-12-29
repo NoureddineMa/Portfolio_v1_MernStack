@@ -5,7 +5,7 @@
 .test-hover {
     border : 1px solid #FFFF;
 }
-.height {
+.min {
     height: min-content;
     margin: 10px 0;
 }
@@ -17,4 +17,12 @@
     flex-direction: column;
     align-items: center;
     font-family: 'podkova';
+}
+.top-X {
+    top: 4rem;
+}
+
+.last {
+    left: 450px;
+    bottom: 0px;
 }
