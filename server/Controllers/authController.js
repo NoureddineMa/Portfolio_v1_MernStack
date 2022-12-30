@@ -7,24 +7,37 @@ const User = require('../Models/userSchema');
 // @desc    Auth Admin
 //  @Route   POST /api/users/login
 // @access  Public
-// const Login = asyncHandler(async (req, res) => {
-//     const { email, password } = req.body;
+// URL : http://localhost:3001/api/users/Login
 
-//     // check for user email : 
-//     const user = await User.findOne({ email})
-//     if (user) {
+const Login = asyncHandler(async (req, res) => {
+    const { email, password } = req.body;
 
-//     }
-
-
+    // check for user email : 
+    const user = await User.findOne({ email})
+    if (user) {
+        // compare password
+        const isMatch = await bycrypt.compare(password, user.password)
+        if (isMatch) {
+            // create token
+            const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: '1d'})
+            const role = user.role
+            res.status(200)
+            .json({token , role , message: "Login successfully"})
+        } else {
+            res.status(401)
+            .json({message: "Invalid credentials"})
+        }
+    }
+})
 
 // @desc Auth Admin
 // @Route POST /api/users/register
 // @access Public
+// URL : http://localhost:3001/api/users/register
 
 const Register = asyncHandler(async (req, res) => {
     const { name, email, password, role } = req.body;
-    if ( !name && !email && !password && !role ){
+    if ( !name || !email || !password || !role ){
         res.status(400)
         .json({message: "Please fill all the fields"})
     }
@@ -51,5 +64,5 @@ const Register = asyncHandler(async (req, res) => {
 })
 
 
-module.exports = {Register}
+module.exports = {Register , Login}
 
