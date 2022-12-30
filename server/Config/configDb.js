@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-const  {DB_CONNECT}  = process.env;
+const  DB_CONNECT  = process.env.DB_CONNECT;
 
 exports.connect = () => {
     mongoose.set('strictQuery' , true)
@@ -11,7 +11,7 @@ exports.connect = () => {
       useNewUrlParser: true
     })
     .then(() => {
-      console.log("Successfully connected to database");
+      console.log("Successfully connected to database !");
     })
     .catch((error) => {
       console.log("database connection failed. exiting now...");

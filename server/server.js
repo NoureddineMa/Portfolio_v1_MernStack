@@ -1,17 +1,22 @@
 const express = require('express');
 require('dotenv').config()
+const {router} = require('./Routers/authRouters');
+
+// connect database
+require('./Config/configDb').connect();
+require('./Models/userSchema');
 
 const PORT = process.env.PORT;
 const app = express();
+app.use(express.urlencoded ({extended: false}))
+app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-    });
+
+app.use('/api/users', router);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}` );
     }
 );  
 
-// connect database
-require('./Config/configDb').connect();
+
