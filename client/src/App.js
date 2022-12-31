@@ -5,6 +5,8 @@ import { BrowserRouter,  Routes, Route } from 'react-router-dom';
 import Layout from "./Components/pages/Layout";
 import Blogs from "./Components/pages/Blogs";
 import Contactme from "./Components/pages/Contactme";
+import Dashboard from "./Components/Admin/Dashboard";
+import Login from "./Components/Admin/Login";
 
 
 function App() {
@@ -18,6 +20,10 @@ function App() {
       <Route path='/Blogs' element={<Blogs/>} />
       <Route path='/Contactme' element={<Contactme />} />
     </Route>
+
+      <Route element={<Layout />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
   </Routes>
   </BrowserRouter>
   );
