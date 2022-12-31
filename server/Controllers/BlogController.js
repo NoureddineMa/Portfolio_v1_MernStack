@@ -3,7 +3,6 @@ const Blog = require('../Models/BlogsSchema');
 
 
 // @desc Post Single Blog
-// @Route POST /api/blogs
 // @access Private
 // URL : http://localhost:3001/api/blog/create
 const PostBlog = asyncHandler(async (req, res) => {
