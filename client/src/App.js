@@ -21,9 +21,9 @@ function App() {
       <Route path='/Contactme' element={<Contactme />} />
     </Route>
 
-      <Route element={<Layout />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+    <Route element={<Layout />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/Dashboard" element={<Dashboard />} />
   </Routes>
   </BrowserRouter>
   );

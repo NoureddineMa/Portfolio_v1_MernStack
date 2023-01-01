@@ -1,5 +1,6 @@
 const express = require('express');
-require('dotenv').config()
+require('dotenv').config();
+const cors = require('cors');
 const {router} = require('./Routers/authRouters');
 const Blogrouters = require('./Routers/BlogRouters');
 const ProjectRouters = require('./Routers/ProjetRouters');
@@ -10,8 +11,9 @@ require('./Models/userSchema');
 
 const PORT = process.env.PORT;
 const app = express();
-app.use(express.urlencoded ({extended: false}))
-app.use(express.json())
+app.use(cors({origin:true,credentials:true}));
+app.use(express.urlencoded ({extended: false}));
+app.use(express.json());
 
 
 app.use('/api/users', router);
