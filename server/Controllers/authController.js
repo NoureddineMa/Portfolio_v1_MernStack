@@ -13,7 +13,7 @@ const Login = asyncHandler(async (req, res) => {
     const { email, password } = req.body;
 
     // check for user email : 
-    const user = await User.findOne({ email})
+    const user = await User.findOne({ email , role: 'admin'})
     if (user) {
         // compare password
         const isMatch = await bycrypt.compare(password, user.password)
@@ -24,7 +24,7 @@ const Login = asyncHandler(async (req, res) => {
             res.status(200)
             .json({token , role , message: "Login successfully"})
         } else {
-            res.status(401)
+            res.status(400)
             .json({message: "Invalid credentials"})
         }
     }

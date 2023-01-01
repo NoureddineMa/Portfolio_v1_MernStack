@@ -1,6 +1,8 @@
 import axios from 'axios'
-import { useState , useEffect } from 'react'
+import { useState  } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 
 function Login() {
@@ -21,30 +23,37 @@ function Login() {
   const API = 'http://localhost:3001/api/users/Login'
   const HandleLogin = async (e) => {
     e.preventDefault()
-    const data = {
-      email,
-      password
-    }
-    try {
-      const response = await axios.post(API, data)
-      console.log(response)
-      if (response.data.status === 'success') {
-        localStorage.setItem('token', response.data.token)
-        navigate('/Dashboard')
-      } else {
-        setError(response.data.message)
-      }
-    } catch (error) {
-      console.log(error)
-    }
+   const user = {
+       email,
+       password
+   }
+   try {
+    const result = await axios.post(API, user)
+    const token = result.data.token
+    const role = result.data.role
+    localStorage.setItem('token', token)
+    localStorage.setItem('role', role)
+    navigate('/test')
+   } catch (error) {
+    setError(error.response.data.message)
+   }
+   
   }
-
+  const showToastMessage = () => {
+    toast.error(`${error}`, {
+      position: toast.POSITION.TOP_CENTER
+    })
+  }
+    const submit = (e) => {
+    HandleLogin(e);
+    showToastMessage();
+  }
 
   return (
     <>
 <div className="mx-auto bg-dark max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
   <div className="mx-auto max-w-lg">
-    <form   className="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl">
+    <form className="mt-6 mb-0 space-y-4 rounded-lg p-8 shadow-2xl">
       <div>
         <label htmlFor="email" className="text-sm font-medium">Email</label>
         <div className="relative mt-1">
@@ -62,14 +71,17 @@ function Login() {
           <input type="password" id="password" value={password} onChange={handlePassword} className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm" placeholder="Enter password" />
         </div>
       </div>
-      <button  onClick={HandleLogin} className="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">
+      <button  onClick={submit} className="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">
         Sign in
       </button>
     </form>
+    <ToastContainer />
   </div>
 </div>
+
     </>
   )
 }
+
 
 export default Login
