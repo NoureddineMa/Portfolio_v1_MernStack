@@ -33,7 +33,7 @@ function Login() {
     const role = result.data.role
     localStorage.setItem('token', token)
     localStorage.setItem('role', role)
-    navigate('/test')
+    navigate('/Dashboard')
    } catch (error) {
     setError(error.response.data.message)
    }

@@ -1,8 +1,25 @@
 import React from 'react'
 import './PageBlog.css'
 import Image from '../../images/hoisting.png'
+import axios from 'axios'
+import { useState , useEffect } from 'react'
 
 function PageBlog() {
+
+
+    const [Blog , setBlog] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost:3001/api/blog/getAll')
+        .then(res => {
+            console.log(res.data);
+            setBlog(res.data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    } , [])
+
     return (
         <>
             <section className="bg-black dark:bg-gray-900 over relative">
@@ -106,49 +123,20 @@ function PageBlog() {
 
                 <h1 style={{ padding: '78px 0' }} className=" text-center style  text-white text-4xl font-extrabold  leading-none md:text-5xl xl:text-6xl dark:text-white center">Blogs !</h1>
 
+                {Blog.map((item) => 
                 <div className=' center w-full container  flex justify-center flex-col lg:flex-row '>
                     <div className='w-full my-16 align-items  '>
                         <img className='w-96 ' src={Image} alt="" />
                     </div>
                     <div className='w-25 align-items  '>
-                        <h1 className='text-white p-4 font-bold text-5xl'>Title Blog .</h1>
-                        <p className='text-white text-base poppins	p-4 text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, <br /> et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. <br /> Etiam a efficitur magna</p>
+                        <h1 className='text-white p-4 font-bold text-5xl'>{item.title}</h1>
+                        <p className='text-white text-base poppins	p-4 text-start'>{item.Content}</p>
                         <a style={{color: '#7A86DD'}} href="" className=' text-base p-4'>Read More ...</a>
                     </div>
                 </div>
-                <div className=' center w-full container  flex  justify-center flex-col  lg:flex-row-reverse '>
-                    <div className='w-full my-16 align-items  '>
-                        <img className='w-96  ' src={Image} alt="" />
-                    </div>
-                    <div className='w-25 align-items  ls '>
-                    <h1 className='text-white p-4 font-bold text-5xl'>Title Blog .</h1>
-                    <p className='text-white text-base poppins	p-4 text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, <br /> et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. <br /> Etiam a efficitur magna</p>                   
-                    <a  style={{color: '#7A86DD'}}  href="" className=' text-base p-4'>Read More ...</a>
-                    </div>
-                </div>
-                <div className='flex  style justify-center'>
-                </div>
-
-                <div className=' center w-full container  flex justify-center flex-col lg:flex-row '>
-                    <div className='w-full my-16 align-items  '>
-                        <img className='w-96 ' src={Image} alt="" />
-                    </div>
-                    <div className='w-25 align-items  '>
-                        <h1 className='text-white p-4 font-bold text-5xl'>Title Blog .</h1>
-                        <p className='text-white text-base poppins	p-4 text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, <br /> et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. <br /> Etiam a efficitur magna</p>
-                        <a style={{color: '#7A86DD'}} href="" className=' text-base p-4'>Read More ...</a>
-                    </div>
-                </div>
-                <div className=' center w-full container  flex  justify-center flex-col  lg:flex-row-reverse '>
-                    <div className='w-full my-16 align-items  '>
-                        <img className='w-96  ' src={Image} alt="" />
-                    </div>
-                    <div className='w-25 align-items  ls '>
-                    <h1 className='text-white p-4 font-bold text-5xl'>Title Blog .</h1>
-                    <p className='text-white text-base poppins	p-4 text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, <br /> et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. <br /> Etiam a efficitur magna</p>                   
-                    <a  style={{color: '#7A86DD'}}  href="" className=' text-base p-4'>Read More ...</a>
-                    </div>
-                </div>
+                )}
+              
+               
                 <div className='flex  style justify-center'>
                     <a className='  borderR my-5 px-8 py-3 hover:bg-white  text-lg ' style={{ color: '#7A86DD' }} href="">See more</a>
                 </div>

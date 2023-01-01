@@ -4,7 +4,12 @@ import Data from '../../images/data.png'
 import Hoisting from '../../images/hoisting.png'
 import Try from '../../images/maxresdefault.jpg'
 
+
 function Blogs() {
+
+
+	
+
     return (
         <div className='bg-black size py-7 ' >
             <div className='title py-6 '>

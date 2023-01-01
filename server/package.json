@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": " node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --runInBand --forceExit",
+    "server": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
