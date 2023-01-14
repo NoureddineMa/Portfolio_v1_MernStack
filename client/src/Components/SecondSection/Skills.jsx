@@ -20,7 +20,10 @@ function Skills() {
         <h1 className='Size mt-3'>Full Stack  Developpement</h1>
         <p className='text-xs paragraphe mt-3 leading-normal
 ' >
-        Lorem ipsum dolor sit amet, <br />  consectetur adipiscing elit.Proin laoreet, erat eget.
+       I am proficient in a range of web development technologies, including HTML, CSS, JavaScript, <br />
+        I have experience building and maintaining dynamic and interactive websites, <br />
+         and am skilled in creating responsive layouts that are optimized <br />
+          for viewing on a variety of devices.
         </p>
         </div>
 
@@ -32,7 +35,11 @@ function Skills() {
         <h1 className='Size mt-3'>Ux/Ui Design</h1>
         <p className='text-xs paragraphe mt-3 leading-normal
 '>
-        Lorem ipsum dolor sit amet,  <br />consectetur adipiscing elit. Proin laoreet, erat eget.
+        I am skilled in user interface (UI) and user experience (UX) design, <br />
+         with a strong focus on creating intuitive and visually appealing interfaces for web and <br />
+          mobile applications. I have experience conducting user research, creating wireframes and prototypes, <br />
+           and designing the final visual elements of a product. My goal is to create a seamless <br />
+            and enjoyable experience for users
         </p>
         </div>
 
@@ -44,7 +51,10 @@ function Skills() {
         <h1 className='Size mt-3'>Mobile Developpement</h1>
          <p className='text-xs paragraphe mt-3 leading-normal
 '>
-         Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit.  Proin laoreet, erat eget.
+         I am skilled in designing and developing user interfaces for mobile applications.  <br />
+          I have experience creating wireframes and prototypes, as well as designing the final <br />
+           visual elements of a mobile app. My goal is to create a seamless and enjoyable experience for  <br />
+            users on a variety of mobile devices, 
         </p>   
         </div>
     </div>

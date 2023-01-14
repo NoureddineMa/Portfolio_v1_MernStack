@@ -1,7 +1,15 @@
 import React from 'react'
 import './HeroSection.css'
+import Pdf from '../../pdf/pdf.pdf'
 
 function HeroSection() {
+
+   
+        const handlePrint = () => {
+          const printWindow = window.open(Pdf);
+            printWindow.print();
+        }
+    
     return (
         <div>
             <div className="hero container-fluid  relative grid min-h-full place-items-center py-8" style={{ backgroundColor: '#000000', paddingTop: '8rem' }}>
@@ -84,7 +92,7 @@ function HeroSection() {
                     <h1 className="text-5xl text-white hero lg:text-9xl">Noureddine Maher</h1>
                     <p className="py-6 text-base  text-violet-400" >Full Stack developper JavaScript & <br /> Ui/Ux Designer</p>
                     <button type="button" style={{ backgroundColor: '#7A86DD' }} className="text-white    text-sm px-10 py-2.5 text-center mr-3 md:mr-0 dark:bg-violet-400 dark:hover:bg-violet-400 dark:focus:violet-400 mx-2">Contact me</button>
-                    <button type="button" className="text-white border  hover:violet-400 focus:violet-400 focus:outline-none focus:violet-400 font-medium text-sm px-10 py-2.5 text-center mr-3 md:mr-0 dark:bg-violet-400 dark:hover:bg-violet-400 dark:focus:violet-400 mx-2">Download CV</button>
+                    <button onClick={handlePrint} type="button" className="text-white border  hover:violet-400 focus:violet-400 focus:outline-none focus:violet-400 font-medium text-sm px-10 py-2.5 text-center mr-3 md:mr-0 dark:bg-violet-400 dark:hover:bg-violet-400 dark:focus:violet-400 mx-2">Download CV</button>
                 </div>
             </div>
         </div>

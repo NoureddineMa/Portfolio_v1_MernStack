@@ -1,25 +1,15 @@
 import React from 'react'
-import Image from '../../images/hoisting.png'
+import Projet1 from '../../images/projet1.png'
+import Projet2 from '../../images/projet2.png'
+import Projet3 from '../../images/projet3.png'
+import Projet4 from '../../images/projet4.png'
+import Projet5 from '../../images/projet5.png'
+import Projet6 from '../../images/projet6.png'
 import './PageProject.css'
 import { Link } from 'react-router-dom'
 
 function PageProject() {
 
-
-    const Projects = [
-        {
-        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-         },
-         {
-          p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-           },
-           {
-            p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-             },
-             {
-              p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-               },
-        ]
 
 
   return (
@@ -75,10 +65,14 @@ function PageProject() {
 
         <div className="p-10 container flex flex-col    lg:flex-row   gap-5 style">
           <div className="rounded border overflow-hidden shadow-lg">
-            <img className="w-full" src={Image} alt="Mountain" />
+            <img className="w-full" src={Projet1} alt="Mountain" />
             <div className="px-3 py-4">
-              <p className="text-gray-700 text-base px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              <p className="text-gray-400 text-base px-3">
+                 For this project, I created a personal portfolio website to showcase my skills and projects as a web developer/web designer The website features a clean and modern design, with easy navigation and responsive layout for optimal viewing on a variety of devices.
+
+I utilized my expertise in HTML, CSS, and JavaScript "ReactJs" to create a visually appealing and functional website. The portfolio includes a selection of my best work, along with a brief description of each project and my role in its development.
+
+I am proud of this project as it represents me and my skills as a web developer/web designer and I hope it will help potential clients and employers get a sense of my style and capabilities. I am excited to continue building upon and updating my portfolio as I take on new challenges and projects in the future. 
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -91,10 +85,14 @@ function PageProject() {
             </div>
           </div>
           <div className="rounded  border overflow-hidden shadow-lg">
-            <img className="w-full" src={Image} alt="Mountain" />
+            <img className="w-full" src={Projet2} alt="Mountain" />
             <div className="px-3 py-4">
-              <p className="text-gray-700 text-base px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              <p className="text-gray-400 text-base px-3">
+                For this project, we developed a license plate recognition system that can accurately identify and track vehicles by their license plates. The system utilizes advanced image processing and machine learning techniques to extract and analyze the characters on the license plate, even in challenging lighting conditions or when the plate is partially obscured.
+
+The system has numerous potential applications, including traffic management, parking enforcement, and security and surveillance. We are excited to see where this technology takes us and what new possibilities it will open up in the future.
+
+We hope that this project will demonstrate our expertise in image processing and machine learning, and will help us to continue building upon our reputation as a leader in these fields.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -107,10 +105,14 @@ function PageProject() {
             </div>
           </div>
           <div className="rounded  border overflow-hidden shadow-lg">
-            <img className="w-full" src={Image} alt="Mountain" />
+            <img className="w-full" src={Projet3} alt="Mountain" />
             <div className="px-3 py-4">
-              <p className="text-gray-700 text-base px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              <p className="text-gray-400 text-base px-3">
+                 For this project, we developed a comprehensive website for the city of Tanger. The website serves as a one-stop-shop for all things Tanger, including information on local attractions, events, businesses, and government services.
+
+The website features a clean and modern design, with a user-friendly interface and responsive layout for optimal viewing on a variety of devices. We utilized a variety of web development technologies, including HTML, CSS, JavaScript, and a content management system, to create a dynamic and interactive website.
+
+We are proud of this project as it provides a valuable resource for both residents and visitors of Tanger, and we hope it will help to promote the city and its many offerings. We are excited to continue updating and expanding the website as Tanger grows and evolves 
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -127,10 +129,16 @@ function PageProject() {
 
         <div className="p-10 container flex flex-col    lg:flex-row   gap-5 style">
             <div className="rounded border overflow-hidden shadow-lg">
-            <img className="w-full" src={Image} alt="Mountain" />
+            <img className="w-full" src={Projet4} alt="Mountain" />
             <div className="px-3 py-4">
-              <p className="text-gray-700 text-base px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              <p className="text-gray-400 text-base px-3">
+                For this project, we developed a fully-featured e-commerce website using PHP and HTML/CSS. The website, named 1000.ma, allows users to browse and purchase a wide variety of products online.
+
+We utilized PHP for the back-end development of the website, including the creation of a secure and scalable database to store information about products, orders, and customers. For the front-end, we used HTML and CSS to create a visually appealing and easy-to-use interface.
+
+The website also includes features such as a shopping cart, payment processing, and order tracking, making it a complete and convenient shopping experience for users. We are proud of this project and hope that it will help to drive online sales and grow our business.
+
+We are excited to continue developing and improving the website as we expand our product offerings and reach new customers.
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -143,10 +151,14 @@ function PageProject() {
             </div>
             </div>
             <div className="rounded  border overflow-hidden shadow-lg">
-            <img className="w-full" src={Image} alt="Mountain" />
+            <img className="w-full" src={Projet5} alt="Mountain" />
             <div className="px-3 py-4">
-              <p className="text-gray-700 text-base px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              <p className="text-gray-400 text-base px-3">
+                 For this project, we developed a cutting-edge face recognition system at STM, the first AI company in Morocco. Our system utilizes state-of-the-art machine learning techniques to accurately identify individuals from a database of images. The system is able to extract and analyze facial features with high accuracy, even in difficult lighting conditions or when the face is partially obscured.
+
+The potential applications for this technology are numerous, including security and surveillance, event check-in, and personalized marketing. We are proud to be at the forefront of AI development in Morocco and are excited to see where this technology takes us in the future.
+
+We hope that this project will serve as a testament to the innovative and forward-thinking approach we take at STM and will help us to continue building upon our reputation as a leader in the field of AI. 
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -159,10 +171,14 @@ function PageProject() {
             </div>
             </div>
             <div className="rounded  border overflow-hidden shadow-lg">
-            <img className="w-full" src={Image} alt="Mountain" />
+            <img className="w-full" src={Projet6} alt="Mountain" />
             <div className="px-3 py-4">
-              <p className="text-gray-700 text-base px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              <p className="text-gray-400 text-base px-3">
+               For this project, we developed a comprehensive website named Tadkirati.ma that serves as a resource for all things cars and travel. The website features a wide range of information about different types of vehicles, including specifications, reviews, and pricing. Users can also search for and compare different car rental options, and make reservations directly through the website.
+
+In addition to car rentals, the website also offers information about various travel destinations and activities. Users can browse through a selection of hotels, tours, and activities, and make bookings directly through the website.
+
+We utilized a variety of web development technologies, including HTML, CSS, JavaScript, and a content management system, to create a dynamic and interactive website. We are proud of this project as it provides a valuable resource for travelers and car enthusiasts
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -177,9 +193,7 @@ function PageProject() {
         </div>
 
 
-        <div className='flex  style justify-center'>
-                    <a className='  borderR my-5 px-8 py-3 hover:bg-white  text-lg ' style={{ color: '#7A86DD' }} href="">See more</a>
-        </div>
+       
       </section>
     </>
   )

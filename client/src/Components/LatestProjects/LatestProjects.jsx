@@ -1,5 +1,10 @@
 import Image from '../../images/Image.jpg'
 import './LatestProjects.css'
+import Projet1 from '../../images/projet1.png'
+import Projet3 from '../../images/projet3.png'
+import Projet5 from '../../images/projet5.png'
+
+
 
 function LatestProjects() {
   return (
@@ -36,41 +41,50 @@ function LatestProjects() {
 
       <div className='title py-6 '>
         <p className='text-white text-5xl mb-3'>Latest Projects</p>
-        <a className='text-white text-lg  underline' style={{color: '#7A86DD'}} href="">See more</a>
       </div>
          <div className="p-10 container  grid justify-center   grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-7 card" >
   {/*Card 1*/}
   <div className="rounded  bg-white min overflow-hidden shadow-lg test-hover ">
-    <img className="w-full h-1/3" src={Image} />
+    <img className="w-full h-1/3" src={Projet1} />
     <div className="px-6  py-4" style={{backgroundColor: '#222A3E'}}>
-      <p className="font-bold  text-white  text-2xl my-5">Lorem ipsum dolor sit amet</p>
+      <p className="font-bold  text-white  text-2xl my-5">Portfolio</p>
       <p className="text-white opacity-60 text-base my-5">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna  
-      erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna      </p>
-      <button type="button" style={{ backgroundColor: '#7A86DD' }} className="text-white my-5   text-sm px-10 py-2.5 text-center md:mr-0 dark:bg-violet-400 dark:hover:bg-violet-400 dark:focus:violet-400 ">Read more </button>
+      For this project, I created a personal portfolio website to showcase my skills and projects as a web developer/web designer The website features a clean and modern design, with easy navigation and responsive layout for optimal viewing on a variety of devices.
+
+I utilized my expertise in HTML, CSS, and JavaScript "ReactJs" to create a visually appealing and functional website. The portfolio includes a selection of my best work, along with a brief description of each project and my role in its development.
+
+I am proud of this project as it represents me and my skills as a web developer/web designer and I hope it will help potential clients and employers get a sense of my style and capabilities. I am excited to continue building upon and updating my portfolio as I take on new challenges and projects in the future.   </p>
+     
                     
     </div>
   </div>
   {/*Card 2*/}
   <div className="rounded  bg-white min overflow-hidden shadow-lg test-hover">
-    <img className="w-full" src={Image} />
+    <img className="w-full" src={Projet3} />
     <div className="px-6 py-4" style={{backgroundColor: '#222A3E'}}>
-      <p className="font-bold  text-white text-2xl my-5">Lorem ipsum dolor sit amet</p>
+      <p className="font-bold  text-white text-2xl my-5">Tanger.ma</p>
       <p className="text-white opacity-60 text-base my-5">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna  
-      erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna      </p>
-      <button type="button" style={{ backgroundColor: '#7A86DD' }} className="text-white   my-5 text-sm px-10 py-2.5 text-center md:mr-0 dark:bg-violet-400 dark:hover:bg-violet-400 dark:focus:violet-400 ">Read more </button>
+      For this project, we developed a comprehensive website for the city of Tanger. The website serves as a one-stop-shop for all things Tanger, including information on local attractions, events, businesses, and government services.
+
+The website features a clean and modern design, with a user-friendly interface and responsive layout for optimal viewing on a variety of devices. We utilized a variety of web development technologies, including HTML, CSS, JavaScript, and a content management system, to create a dynamic and interactive website.
+
+We are proud of this project as it provides a valuable resource for both residents and visitors of Tanger, and we hope it will help to promote the city and its many offerings. We are excited to continue updating and expanding the website as Tanger grows and evolves </p>
+
                     
     </div>
   </div>
   {/*Card 3*/}
   <div className="roundedn  bg-white min overflow-hidden shadow-lg test-hover">
-    <img className="w-full" src={Image} />
+    <img className="w-full" src={Projet5} />
     <div className="px-6 py-4" style={{backgroundColor: '#222A3E'}}>
-      <p className="font-bold  text-white text-2xl my-5">Lorem ipsum dolor sit amet</p>
+      <p className="font-bold  text-white text-2xl my-5">Face recognition system</p>
       <p className="text-white opacity-60 text-base my-5">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna  erat eget efficitur sagittis, velit augue mollis nulla, et congue mi dolor vitae diam. Etiam a efficitur magna      </p>
-      <button type="button" style={{ backgroundColor: '#7A86DD' }} className="text-white  my-5  text-sm px-10 py-2.5 text-center md:mr-0 dark:bg-violet-400 dark:hover:bg-violet-400 dark:focus:violet-400 ">Read more </button>
+      For this project, we developed a cutting-edge face recognition system at STM, the first AI company in Morocco. Our system utilizes state-of-the-art machine learning techniques to accurately identify individuals from a database of images. The system is able to extract and analyze facial features with high accuracy, even in difficult lighting conditions or when the face is partially obscured.
+
+The potential applications for this technology are numerous, including security and surveillance, event check-in, and personalized marketing. We are proud to be at the forefront of AI development in Morocco and are excited to see where this technology takes us in the future.
+
+We hope that this project will serve as a testament to the innovative and  take STM    building  our reputation as a leader in the field of AI. </p>
+     
     </div>
   </div>
   </div>
